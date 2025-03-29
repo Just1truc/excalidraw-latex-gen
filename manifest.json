@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "LaTeX Renderer for Excalidraw",
+  "version": "1.0",
+  "description": "Render LaTeX math expressions on Excalidraw canvas using KaTeX.",
+  "permissions": ["activeTab", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://excalidraw.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/extension-icon.png"
+  }
+}
