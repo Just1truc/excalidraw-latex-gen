@@ -6,7 +6,7 @@ Render LaTeX equations directly inside [Excalidraw](https://excalidraw.com) by s
 
 ## 🧠 Features
 
-- 📐 Type LaTeX directly in Excalidraw using `$$E = mc^2$$`
+- 📐 Type LaTeX directly in Excalidraw using `$$...$$`
 - 🔍 Automatically detects LaTeX when you leave a text field
 - 🖼 Renders formulas using [KaTeX](https://katex.org)
 - 🖌 Pastes math as a high-quality image directly into the canvas
