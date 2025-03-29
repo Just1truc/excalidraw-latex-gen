@@ -1,20 +1,36 @@
 {
-  "manifest_version": 2,
-  "name": "LaTeX Renderer for Excalidraw",
-  "version": "1.0",
-  "description": "Render LaTeX math expressions on Excalidraw canvas using KaTeX.",
-  "permissions": ["activeTab", "storage"],
+  "name": "Excalidraw LaTeX Helper",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Automatically render LaTeX expressions as images in Excalidraw by typing inside text elements using $$math$$ notation.",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "permissions": [],
+  "host_permissions": ["https://excalidraw.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://excalidraw.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "content_scripts": [
+  "web_accessible_resources": [
     {
-      "matches": ["https://excalidraw.com/*"],
-      "js": ["content.js"]
+      "resources": [
+        "content.js",
+        "injected.js",
+        "vendor/katex.min.js",
+        "vendor/katex.min.css",
+        "vendor/html2canvas.min.js",
+        "vendor/fonts/*"
+      ],
+      "matches": ["https://excalidraw.com/*"]
     }
-  ],
-  "icons": {
-    "48": "icons/extension-icon.png"
-  }
+  ]
 }
+
