@@ -17,6 +17,11 @@ Render LaTeX equations directly inside [Excalidraw](https://excalidraw.com) by s
 
 ## 🚀 Getting Started
 
+### Official Installation
+
+1. [Google](https://chromewebstore.google.com/detail/excalidraw-latex-helper/jheeenhfehagediklndplljomgcknmia)
+2. [Firefox](https://addons.mozilla.org/en-US/firefox/addon/excalidraw-latex-helper/)
+
 ### 🧪 Manual Installation
 
 1. Clone or [Download this repository as ZIP](https://github.com/your-repo-link)
