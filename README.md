@@ -89,7 +89,7 @@ Feel free to fork, submit PRs, or open issues!
 
 - 📄 [Excalidraw](https://excalidraw.com)
 - 📚 [KaTeX](https://katex.org/)
-- ✍️ Created with ❤️ by [Your Name](https://github.com/yourname)
+- ✍️ Created with ❤️ by [Just1truc](https://github.com/Just1truc/)
 
 ---
 
